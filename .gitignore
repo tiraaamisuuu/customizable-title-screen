@@ -10,3 +10,11 @@ run/
 *.hprof
 config/customizable-title-screen/assets/*
 !config/customizable-title-screen/assets/.gitkeep
+/.gradle/
+/build/
+/run/
+/.idea/
+*.iml
+*.ipr
+*.iws
+out/
