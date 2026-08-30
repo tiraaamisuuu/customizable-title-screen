@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "customizable-title-screen-legacy",
+  "version": "${version}",
+  "name": "Customizable Title Screen (Legacy)",
+  "description": "A lightweight local-background title screen editor for Minecraft 1.16.5.",
+  "authors": ["Customizable Title Screen contributors"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": { "client": ["dev.customtitle.legacy.LegacyClient"] },
+  "mixins": [{ "config": "customizable-title-screen-legacy.mixins.json", "environment": "client" }],
+  "depends": {
+    "fabricloader": ">=0.11.7",
+    "minecraft": "1.16.5",
+    "java": ">=8",
+    "fabric": "*"
+  }
+}

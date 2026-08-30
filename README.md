@@ -44,6 +44,16 @@ Writes use a temporary file and atomic move where supported. Imported JSON is da
 
 The mod uses narrow title-screen/screen-event mixins and does not replace unrelated screens or touch multiplayer behavior. Minecraft 26.2's render-state extraction API is used for the custom image. Blur is generated once when an image/effect setting changes, not per frame, and runtime GPU textures are released when title/editor screens change. Logo and edition rendering are handled as one safe title group; third-party widgets are not forcibly reordered. A conflicting title-screen mod may take precedence.
 
+### Legacy 1.16.5 build
+
+A separate lightweight compatibility project is included at `compat/1.16.5`. Its jar supports Fabric Loader 0.11.x/Fabric API 0.42 on Minecraft 1.16.5 and provides the local PNG/JPEG background, a draggable button-preview editor, and reset/save controls. It uses the older 1.16 rendering and screen APIs, so it is not feature-identical to the 26.2 build. Build it with Java 17 from that directory:
+
+```text
+./gradlew build
+```
+
+The legacy distributable is `compat/1.16.5/build/libs/customizable-title-screen-1.16.5-1.0.0.jar`. Other Minecraft versions require their own mapped compatibility build; do not install the 26.2 jar on older versions.
+
 ## Build
 
 Use the included Gradle wrapper with Java 25:

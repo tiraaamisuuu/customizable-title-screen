@@ -12,6 +12,8 @@ config/customizable-title-screen/assets/*
 !config/customizable-title-screen/assets/.gitkeep
 /.gradle/
 /build/
+/compat/*/build/
+/compat/*/.gradle/
 /run/
 /.idea/
 *.iml

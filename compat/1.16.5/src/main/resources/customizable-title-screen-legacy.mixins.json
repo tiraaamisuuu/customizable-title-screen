@@ -1,0 +1,8 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.customtitle.legacy.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": ["TitleScreenMixin"],
+  "injectors": { "defaultRequire": 1 }
+}
