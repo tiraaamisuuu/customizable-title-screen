@@ -1,0 +1,12 @@
+.gradle/
+build/
+out/
+run/
+.idea/
+*.iml
+*.ipr
+*.iws
+*.log
+*.hprof
+config/customizable-title-screen/assets/*
+!config/customizable-title-screen/assets/.gitkeep
